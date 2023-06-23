@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Identification</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <header>
+        <h1>AI Model For Identification Of Objects</h1>
+    </header>
+    <p>Please wait for the model to load</p>
+    <section id="demo" class="invisible"> 
+        <h1>Demo: Classifying Images</h1>
+        <p><em>Click on image below</em>to try and recognize the object in the image</p>
+        <div class="image" >
+            <img src="https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/black-lab-favorite-dog-main-220315-e8e0ee.jpg" width="20%" crossorigin="anonymous" title="Click to identify the object in the image">
+        </div>
+        <h2>Enable your camera for continous detetcion</h2>
+        <div class="videoview" id="liveview">
+            <button id="viewwebcam">Enable Webcam</button>
+            <video id="webcam" autoplay></video>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="ja.js" defer></script>
+</body>
+</html>
